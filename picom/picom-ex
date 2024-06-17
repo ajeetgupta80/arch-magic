@@ -1,0 +1,21 @@
+# Basic settings
+backend = "glx";  # Use GLX backend for better performance
+
+# Enable VSync for tear-free rendering
+ vsync = true;
+
+ # Opacity settings
+opacity-rule = [
+      "80:class_g = 'URxvt'",  # Example: Set transparency for URxvt terminal
+       "90:class_g = 'st'"      # Set transparency for st terminal
+        ];
+
+        # Fading settings
+        fading = true;
+         fade-delta = 5;
+         fade-in-step = 0.03;
+         fade-out-step = 0.03;
+         # Animation settings
+         detect-rounded-corners = true;
+        detect-client-opacity = true;
+         # Note: Uncomment the following line to enable animation, it might cause
