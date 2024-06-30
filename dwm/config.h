@@ -9,7 +9,7 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = {  "Noto Sans CJK JP:size=16", "Ubuntu Mono:size=16:antialias=true:autohint=true","SymbolsNerdFont:size=16:antialias=true:autohint=true","NotoColorEmoji:size=16:antialias=true:autohint=true", "monospace:size=10", "JetBrains Mono:size=11", "JoyPixels:pixelsize=11:antialias=true:autohint=true","SymbolsNerdFont:weight=bold:size=8", "InconsolataGo Nerd Font:style=Regular:size=8" ,"FontAwesome:pixelsize=12:antialias=true:autohint=true"};
+static const char *fonts[]          = { "Noto Sans CJK JP:size=16",  "Ubuntu Mono:size=16:antialias=true:autohint=true","SymbolsNerdFont:size=16:antialias=true:autohint=true","NotoColorEmoji:size=16:antialias=true:autohint=true", "monospace:size=10", "JetBrains Mono:size=11", "JoyPixels:pixelsize=11:antialias=true:autohint=true","SymbolsNerdFont:weight=bold:size=8", "InconsolataGo Nerd Font:style=Regular:size=8" ,"FontAwesome:pixelsize=12:antialias=true:autohint=true"};
 static const char dmenufont[]       = "Noto Sans CJK JP:size=16";
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
@@ -24,7 +24,7 @@ static char *colors[][3] = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "", "", ""};
 
 
 /* screenshot*/
