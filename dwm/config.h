@@ -24,7 +24,7 @@ static char *colors[][3] = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", ""};
+static const char *tags[] = { "󰣇", "", "", "", "", "", ""};
 
 
 /* screenshot*/
@@ -33,6 +33,8 @@ static const char *screenshot[] = {"scrot", "/home/ajeet/Pictures/Screenshots/%Y
 /*brightness constants*/
 static const char *upbrightness[] = {"/home/ajeet/.scripts/dwm/bright.sh", "inc", NULL};
 static const char *downbrightness[] = {"/home/ajeet/.scripts/dwm/bright.sh", "dec", NULL};
+
+static const char *rofidrun[] = { "rofi", "-show", "drun", NULL };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -94,6 +96,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,  	   setlayout,      {0} },
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY,			XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_n,      spawn,          {.v = rofidrun } },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
